@@ -1,0 +1,36 @@
+
+---------------------------------------------------------FICHIER MAIN (MENU)----------------------------------------------------------
+from data_3 import (text_intro,action_for_clients)
+
+#identifier la personne
+intro = print(text_intro)
+statut = "client"
+
+if statut == "client":
+    print (action_for_clients)
+    action = int(input("Quel est votre action ?"))
+    if action == 1:
+        pass
+    if action == 2:
+        pass
+    if action == 3:
+        pass
+    if action == 4:
+        pass
+       
+       
+--------------------------------------------------------FICHIER DATA-----------------------------------------------------------
+
+text_intro = ("\n\
+\n Bienvenue dans le dab de MOULA BANQUE, \
+\n\
+\n Vous pourrez ici consulter votre compte banquaire et effectué divers fonctions ")
+
+action_for_clients = ("\n\
+nous vennons de vérifier votre identifiant, vous êtes bien clients \
+\nVoici les actions que vous pouvez zffzctué selon le numéro que vous entrez :\
+\n\
+\n 1 : Consulter votre compte \
+\n 2 : Effectuer un retrait sur votre compte \
+\n 3 : Effectuer un dépot sur votre compte \
+\n 4 : Consulter votre historique")
