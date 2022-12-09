@@ -12,3 +12,17 @@ nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 3 : Effectuer un dépot sur votre compte \
 \n 4 : Consulter votre historique \
 \n 5 : Consulter le compte bancaire de vos clients") 
+
+"1" input ("Voulez vous rentrer sur votre compte?")
+    if print("Oui"):
+        open the programme
+    if print ("Non"):
+        close the programme
+    else print ("ta mere ne t'a pas appris a écrire")
+        
+
+
+
+
+print("exiting the program")
+print(quit())
