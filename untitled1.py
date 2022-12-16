@@ -3,8 +3,13 @@ text_intro = ("\n\
 \n\
 \n Vous pourrez ici consulter votre compte banquaire et effectué divers fonctions ")
 
-action_for_conseiller = ("\n\
-nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
+text_identifiant = ("\n\
+Veuillez entrer votre identifiant : \n")
+text_mdp = ("\n\
+Veuillez entrer votre mot de passe : \n")
+
+action_for_advisor = ("\n\
+Nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \nVoici les actions que vous pouvez effectuer selon le numéro que vous entrez :\
 \n\
 \n 1 : Consulter votre compte \
