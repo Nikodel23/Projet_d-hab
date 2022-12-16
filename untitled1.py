@@ -14,7 +14,7 @@ nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 5 : Consulter le compte bancaire de vos clients") 
 
 def exit():
-    
+   pass 
 
 n1 = input ("Voulez vous rentrer sur votre compte? ")
 if n1 == "Oui":
