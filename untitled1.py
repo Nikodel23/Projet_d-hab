@@ -22,17 +22,17 @@ def exit():
    pass 
 
 n1 = input ("Voulez vous rentrer sur votre compte? ")
-if n1 == "Oui":
+if n1 == "oui":
             pass
-if n1 == "Non":
+elif n1 == "non":
         exit (n1)
 else :
-    print ("apprends a écrire ")
+    print ("comprends pas ")
 
 
         
 
 
 
-print("exiting the program")
-print(quit())
+#print("exiting the program")
+#print(quit())
