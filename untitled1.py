@@ -27,7 +27,7 @@ if n1 == "Oui":
 if n1 == "Non":
         exit (n1)
 else :
-    input ("apprends a écrire ")
+    print ("apprends a écrire ")
 
 
         
