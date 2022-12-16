@@ -13,14 +13,19 @@ nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 4 : Consulter votre historique \
 \n 5 : Consulter le compte bancaire de vos clients") 
 
-"1" input ("Voulez vous rentrer sur votre compte?")
-    if print("Oui"):
-        open the programme
-    if print ("Non"):
-        close the programme
-    else print ("ta mere ne t'a pas appris a écrire")
-        
+def exit():
+    
 
+n1 = input ("Voulez vous rentrer sur votre compte? ")
+if n1 == "Oui":
+            pass
+if n1 == "Non":
+        exit (n1)
+else :
+    input ("apprends a écrire ")
+
+
+        
 
 
 
