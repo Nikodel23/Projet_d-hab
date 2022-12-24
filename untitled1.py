@@ -25,13 +25,15 @@ n1 = input ("Voulez vous rentrer sur votre compte? ")
 if n1 == "oui":
             pass
 elif n1 == "non":
-        exit (n1)
+        print ("à la prochaine")
 else :
     print ("comprends pas ")
 
-
-        
-
+print("n1. Consulter votre compte")
+print("n2. Effectuer un retrait sur votre compte")
+print("n3. Effectuer un dépot sur votre compte")
+print("n4. Consulter votre historique")
+print("n5. Consulter le compte bancaire de vos clients")
 
 
 #print("exiting the program")
