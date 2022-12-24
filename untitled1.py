@@ -26,14 +26,28 @@ if n1 == "oui":
             pass
 elif n1 == "non":
         print ("à la prochaine")
+        print(exit())
 else :
     print ("comprends pas ")
 
-print("n1. Consulter votre compte")
-print("n2. Effectuer un retrait sur votre compte")
-print("n3. Effectuer un dépot sur votre compte")
-print("n4. Consulter votre historique")
-print("n5. Consulter le compte bancaire de vos clients")
+
+print("1. Consulter votre compte")
+print("2. Effectuer un retrait sur votre compte")
+print("3. Effectuer un dépot sur votre compte")
+print("4. Consulter votre historique")
+print("5. Consulter le compte bancaire de vos clients")
+while 1:
+    reponse = input("choisissez 1, 2, 3, 4 ou 5")
+    if reponse in ['1','5']:
+        break
+    else:
+        print("Choix incorrect")
+print(reponse)
+
+
+
+
+
 
 
 #print("exiting the program")
