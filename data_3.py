@@ -38,3 +38,5 @@ text_action_account = (("Vous venez de consulter votre compte, \
 \n\
 \n Votre nom est : ") + ("") + ("\n\ \n Votre mot de passe est :") + ("") + \
 ("Il vous reste actuellement sur votre compte ") + ("") + ("€."))
+                       
+print (text_action_account)
