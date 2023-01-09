@@ -18,37 +18,38 @@ Nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 4 : Consulter votre historique \
 \n 5 : Consulter le compte bancaire de vos clients") 
 
-def exit():
-   pass 
 
-n1 = input ("Voulez vous rentrer sur votre compte? ")
-if n1 == "oui":
-            pass
-elif n1 == "non":
-        print ("à la prochaine")
-        print(exit())
-else :
-    print ("comprends pas ")
+def text_action_account():
+    print(identification)
+    print(mot_de_passe)
+    print(Moula)
+    if text_action_account == 0:
+        print(menu_for_clients)
+        
+        
+def text_action_withdrawal():
+    print(Moula)
+    if text_action_withdrawal == 0:
+        print(menu_for_clients)
+    if text_action_withdrawal == 1:
+        i>=0
+        liste=[10,20,50,100,200,500]
+        dico_client = i
+         
 
-
-print("1. Consulter votre compte")
-print("2. Effectuer un retrait sur votre compte")
-print("3. Effectuer un dépot sur votre compte")
-print("4. Consulter votre historique")
-print("5. Consulter le compte bancaire de vos clients")
-while 1:
-    reponse = input("choisissez 1, 2, 3, 4 ou 5")
-    if reponse in ['1','5']:
-        break
-    else:
-        print("Choix incorrect")
-print(reponse)
-
-
-
-
-
-
-
-#print("exiting the program")
-#print(quit())
+def text_action_deposit():
+    print(Moula)
+    if text_action_deposit == 0:
+        print(menu_for_clients)
+    if text_action_deposit == 1:
+        i>=0
+        liste=[10,20,50,100,200,500]
+    
+    
+def text_action_history():
+    print(Moula)
+    print(Moula_history)
+        if text_action_history == 0:
+            print(menu_for_clients)
+    
+     
