@@ -4,22 +4,44 @@ Created on Mon Jan  9 19:42:59 2023
 
 @author: Aurélien
 """
-
+list_name_advice = {"niko","aurelienne"}
+list_name_advisor = "noah"
 identification = "\n\Pouvez vous nous indiquez votre nom et prénom ? "
 
-identification = input ("\n\Pouvez vous nous indiquez votre nom et prénom ? ")
-if identification == #nom d'un client
-    mot_de_passe = input ("\n\Veuillez entrer votre mot de passe: ")
-    if mot_de_passe == #mdp du client en question
+
+def mot_de_passe_fct():
+    mot_de_passe = input ("\nVeuillez entrer votre mot de passe: ")
+    return mot_de_passe
+
+def identification_fct():
+    statut = input("Quel est votre statut ? ")
+    identification = input ("\nPouvez vous nous indiquez votre nom et prénom ? ")
+    if statut == "client":
+        if identification not in list_name_advice :
+            identification_erronee()
+        else:
+            statut = "client"
+            print (statut)
+            return (statut)
+    if statut == "conseiller":
+        if identification not in list_name_advisor :
+            identification_erronee()
+        else:
+            statut = "conseiller"
+            print (statut)
+            return (statut)
+
+def identification_erronee():      
+    print ("\nVotre identifiant est incorrect.\n\n")
+    return identification_fct()
+    
+    
+identification_fct()
+'''if mot_de_passe_fct() == "a":
     statut = "client "
-    else:
-        pass
-elif identification == #nom d'un conseiller
-    mot_de_passe = input ("\n\Veuillez entrer votre mot de passe: ")
-    if mot_de_passe == #mdp du conseiller en question
-    statut = "conseiller "
-    else:
-        pass
-else:
-    identification_erronee = input ("\n\Merci de réinsérer votre nom et prénom : ")
-    #Faire une fonction pour relancer le programme
+    print(statut)
+ mot_de_passe = input ("\nVeuillez entrer votre mot de passe: ")
+ if mot_de_passe == "été gold":
+     statut = "conseiller "
+     print(statut)
+     '''
