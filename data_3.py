@@ -22,7 +22,7 @@ nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 3 : Effectuer un dépot sur votre compte \
 \n 4 : Consulter votre historique")
 
-text_action_withdrawal = ("Vous avez choissie de faire un retrait \
+text_action_withdrawal = ("Vous avez choisie de faire un retrait \
 \n\
 \nQuel est le montant de votre retrait ? ")
 
