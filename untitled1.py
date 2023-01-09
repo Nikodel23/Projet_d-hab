@@ -27,5 +27,29 @@ def text_action_account():
         print(menu_for_clients)
         
         
+def text_action_withdrawal():
+    print(Moula)
+    if text_action_withdrawal == 0:
+        print(menu_for_clients)
+    if text_action_withdrawal == 1:
+        i>=0
+        liste=[10,20,50,100,200,500]
+        dico_client = i
+         
+
+def text_action_deposit():
+    print(Moula)
+    if text_action_deposit == 0:
+        print(menu_for_clients)
+    if text_action_deposit == 1:
+        i>=0
+        liste=[10,20,50,100,200,500]
+    
+    
+def text_action_history():
+    print(Moula)
+    print(Moula_history)
+        if text_action_history == 0:
+            print(menu_for_clients)
     
      
