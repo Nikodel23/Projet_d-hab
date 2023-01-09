@@ -18,37 +18,14 @@ Nous vennons de vérifier votre identifiant, vous êtes bien conseiller \
 \n 4 : Consulter votre historique \
 \n 5 : Consulter le compte bancaire de vos clients") 
 
-def exit():
-   pass 
 
-n1 = input ("Voulez vous rentrer sur votre compte? ")
-if n1 == "oui":
-            pass
-elif n1 == "non":
-        print ("à la prochaine")
-        print(exit())
-else :
-    print ("comprends pas ")
-
-
-print("1. Consulter votre compte")
-print("2. Effectuer un retrait sur votre compte")
-print("3. Effectuer un dépot sur votre compte")
-print("4. Consulter votre historique")
-print("5. Consulter le compte bancaire de vos clients")
-while 1:
-    reponse = input("choisissez 1, 2, 3, 4 ou 5")
-    if reponse in ['1','5']:
-        break
-    else:
-        print("Choix incorrect")
-print(reponse)
-
-
-
-
-
-
-
-#print("exiting the program")
-#print(quit())
+def text_action_account():
+    print(identification)
+    print(mot_de_passe)
+    print(Moula)
+    if text_action_account == 0:
+        print(menu_for_clients)
+        
+        
+    
+     
