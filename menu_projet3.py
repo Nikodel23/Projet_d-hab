@@ -25,6 +25,8 @@ if statut == "client":
 
 print (menu_for_clients())
   
+
+
 if statut == "conseiller ":
     def menu_for_advisor ():
         print (text_for_action_for_advisor)
@@ -32,13 +34,17 @@ if statut == "conseiller ":
         if action == 0:
             pass
         if action == 1:
-            pass
+            print(text_action_account)
         if action == 2:
-            pass
+            print (text_action_withdrawal)
+            amount = int(input("montant :"))
+            return amount
         if action == 3:
-            pass
+            print (text_action_deposit)
+            deposit = int(input("dépot : "))
+            return deposit
         if action == 4:
-            pass
+            print(text_action_history)
         
         
     
