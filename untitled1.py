@@ -27,30 +27,36 @@ def text_action_account(identification,mot_de_passe,solde):
     if text_action_account == 0:
         print(menu_for_clients)
         
-        
+
 def text_action_withdrawal(solde,somme):
             print(solde)
             if text_action_withdrawal == 0:
                 print(menu_for_clients)
                 if text_action_withdrawal == 1:
-                    liste_de_possibilté_de_prélevement=[10,20,50,100,200,500]
-                    somme = liste_de_possibilté_de_prélevement
+                    i=0
+                    liste_de_possibilté_de_versement=[10,20,50,100,200,500]
+                    somme = liste_de_possibilté_de_versement
                     solde = solde + somme
+                    i=i+1
                     print(solde)
-
-
-
+                    
+                    
+                    
 def text_action_deposit(solde,somme):
-            print(solde)
+   print(solde)
+         with open ("dico.json","r") as file:
+       dico = json.loads(file)
             if text_action_deposit == 0:
                 print(menu_for_clients)
                 if text_action_deposit == 1:
                     liste_de_possibilté_de_prélevement=[10,20,50,100,200,500]
+                    i=0
                     somme = liste_de_possibilté_de_prélevement
                     if (somme > solde):
                         print("Solde insuffisante!")
                 else:
                     solde = solde-somme
+                    i=i-1
                 print(solde)
         
         
