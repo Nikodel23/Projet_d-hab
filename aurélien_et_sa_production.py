@@ -1,3 +1,4 @@
+import json
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan  9 19:42:59 2023
@@ -36,19 +37,21 @@ def identification_erronee():
     return identification_fct()
 
 
-def text_historique ():
+def text_historique (name):
     with open ("dico.json","r") as file:
-        dico = json.loads(file)
+        dico = json.load(file)
     historique = dico[name]["historique"]
+    print (historique)
     return historique
 
-def write_in_historique():
-    with open ("dico.json","w") as file:
-       dico = json.loads(file)
-    return
+#def write_in_historique(dico.json):
+#    if new_prelevement:
+#        with open (dico.json,"w") as file:
+#            file.write ("historique")
+#    return
     
-    
-identification_fct()
+text_historique("Monsieur Patate")
+#identification_fct()
 '''if mot_de_passe_fct() == "a":
     statut = "client "
     print(statut)
