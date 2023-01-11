@@ -34,6 +34,18 @@ def identification_fct():
 def identification_erronee():      
     print ("\nVotre identifiant est incorrect.\n\n")
     return identification_fct()
+
+
+def text_historique ():
+    with open ("dico.json","r") as file:
+        dico = json.loads(file)
+    historique = dico[name]["historique"]
+    return historique
+
+def write_in_historique():
+    with open ("dico.json","w") as file:
+       dico = json.loads(file)
+    return
     
     
 identification_fct()
