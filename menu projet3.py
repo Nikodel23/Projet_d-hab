@@ -1,7 +1,7 @@
 from data_3 import (text_intro,text_for_action_for_clients, \
                     text_for_action_for_advisor,text_action_withdrawal,\
                     text_action_deposit, text_action_history, \
-                    text_action_account)
+                    text_action_account, texte_historique)
 
 #identifier la personne
 intro = print(text_intro)
@@ -22,6 +22,7 @@ if statut == "client":
             return deposit
         if action == 4:
             print(text_action_history)
+            return texte_historique(identification)
 
 print (menu_for_clients())
   
