@@ -22,7 +22,7 @@ if statut == "client":
             return deposit
         if action == 4:
             print(text_action_history)
-            return texte_historique(identification)
+            return texte_historique(name)
 
 print (menu_for_clients())
   
