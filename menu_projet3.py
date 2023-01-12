@@ -13,15 +13,6 @@ replay_commands = \
     ["y", "yes", "Y", "go", "ok", "Yes", "on y va", "let's go", "oui", "o", "O", "Oui"]
 
 
-
-
-
-def action_list_advice_advisor ():
-    text_list_advice = ("Voici la liste des clients qui ont été enregistrés dans notre base de données client :" \
-                        + str (list_name_advice))
-    return text_list_advice
-
-
 #############################################################################################################################
 
 
@@ -68,17 +59,54 @@ def password_false():
 def action_account (name):
     with open ("dico.json","r") as file:
         dico = json.load(file)
-    nom = dico[name]
     mdp = dico[name]["mot de passe"]
     compteur = dico [name]["compteur"]
     date_birth = dico [name]["date de naissance"]
     texte_action_account = ("Votre compte comprends les informations suivantes :\n" \
-    +"\n Nom : " + str (nom) \
+    +"\n Nom : " + str (name) \
     +"\n Date de naissance : " + str (date_birth) \
     +"\n Mot de passe : " + str (mdp) \
     +"\n Solde restante : " + str (compteur))
     print (texte_action_account)
 
+
+def text_historique (name):
+    with open ("dico.json","r") as file:
+        dico = json.load(file)
+    historique = dico[name]["historique"]
+    print (historique)
+    return historique
+
+def write_in_json_file_dico_python (dico, json_file_name):
+    with open (json_file_name, 'w') as file:
+        json.dump (dico, file)
+
+
+def action_deposit (name):
+    deposit = int(input("montant de votre dépot : "))
+    with open ("dico.json","w") as file:
+        dico = json.load(file)
+        solde_nouvelle = dico[name]["compteur"] 
+        solde_nouvelle += deposit
+        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvelle], dico.json)
+        print (dico[name]["compteur"])
+        
+def action_withdrawal (name):
+    amount = int(input("montant de votre retrait : "))
+    with open ("dico.json","w") as file:
+        dico = json.load(file)
+    if amount >= dico[name]["compteur"]:
+        return ("error 404")
+    else:
+        solde_nouvelle = dico[name]["compteur"] 
+        solde_nouvelle -= amount
+        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvelle], dico.json)
+        print (dico[name]["compteur"])
+
+def action_list_advice_advisor ():
+    text_list_advice = ("Voici la liste des clients qui ont été enregistrés dans notre base de données client :" \
+                        + str (list_name_advice))
+    return text_list_advice
 
 ####################################################################################################################################
 
@@ -105,8 +133,7 @@ def menu_for_clients():
         return action_account(name)
     if action == 2:
         print (text_action_withdrawal)
-        amount = int(input("montant :"))
-        return amount
+        action_withdrawal(name)
     if action == 3:
         print (text_action_deposit)
         deposit = int(input("dépot : "))
@@ -120,15 +147,13 @@ def menu_for_advisor ():
     if action == 0:
         action_list_advice_advisor()
     if action == 1:
-        return action_account(name)
+        action_account(name)
     if action == 2:
         print (text_action_withdrawal)
-        amount = int(input("montant du retrait :"))
-        return amount
+        action_withdrawal(name)
     if action == 3:
         print (text_action_deposit)
-        deposit = int(input("montant du dépot : "))
-        return deposit
+        action_deposit(name)
     if action == 4:
         print(text_action_history)
 
@@ -136,10 +161,9 @@ def menu_for_advisor ():
 intro = print(text_intro)
 name = input ("\nPouvez vous nous indiquez votre nom et prénom ? ")
 statut = identification_fct(name)
-mot_de_passe = mot_de_passe_fct()
+#mot_de_passe = mot_de_passe_fct()
 if statut == "client":
     restart_advice()
-
 if statut == "conseiller ":
     restart_advisor()
 
