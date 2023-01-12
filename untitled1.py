@@ -43,6 +43,7 @@ def text_action_withdrawal(solde,somme):
                     
                     
 def text_action_deposit(solde,somme):
+<<<<<<< HEAD
    print(solde)
          with open ("dico.json","r") as file:
        dico = json.loads(file)
@@ -58,6 +59,19 @@ def text_action_deposit(solde,somme):
                     solde = solde-somme
                     i=i-1
                 print(solde)
+=======
+    print(solde)
+    if text_action_deposit == 0:
+        print(menu_for_clients)
+    if text_action_deposit == 1:
+        liste_de_possibilté_de_prélevement=[10,20,50,100,200,500]
+        somme = liste_de_possibilté_de_prélevement
+    if (somme > solde):
+            print("Solde insuffisante!")
+    else:
+        solde = solde-somme
+        print(solde)
+>>>>>>> d723108bd48ab59d83241cdedef328f8d1843118
         
         
         
