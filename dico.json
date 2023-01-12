@@ -2,7 +2,7 @@
     "Hellie Trop": 
         {
             "date de naissance": "12/13/10",
-            "mot de passe": "voleràlamaison",
+            "mot de passe":"voleralamaison",
             "compteur": 1908,
             "historique" :[]
         },
@@ -13,18 +13,88 @@
             "compteur":2111,
             "historique" :[]
         },
-    "Batard": 
+    "Batarde Patrop": 
         {
             "date de naissance": "12/03/08",
-            "mot de passe": "HUM",
+            "mot de passe": "Stop",
             "compteur":2110000,
             "historique" :[]
         },
-     "Monsieur Patate":
-	{
-	    "date de naissance": "09/04/78",
-	    "mot de passe": "frite",
-	    "compteur": 682,
-	    "historique" :[]
-	}
+    "Iris Machina": 
+        {
+            "date de naissance": "15/07/95",
+            "mot de passe": "sus",
+            "compteur":1500000,
+            "historique" :[]
+        },
+    "Jean Pranote": 
+        {
+            "date de naissance": "15/12/18",
+            "mot de passe": "babysan",
+            "compteur":50000,
+            "historique" :[]
+        },
+    "Monsieur Patate": 
+        {
+            "date de naissance": "17/02/95",
+            "mot de passe": "je suis riche",
+            "compteur":5000000000000000000000,
+            "historique" :[]
+        },
+    "Henri Gluant": 
+        {
+            "date de naissance": "18/10/06",
+            "mot de passe": "Goalbiach",
+            "compteur":8000000000000000000000000,
+            "historique" :[]
+        },
+    "Jesus Pauvre": 
+        {
+            "date de naissance": "25/12/00",
+            "mot de passe": "Picetlove",
+            "compteur":5000,
+            "historique" :[]
+        },
+    "Tom Desavoie": 
+        {
+            "date de naissance": "15/06/01",
+            "mot de passe": "stnecktaire",
+            "compteur":400,
+            "historique" :[]
+        },
+    "Lamadre Dekanté": 
+        {
+            "date de naissance": "18/05/20",
+            "mot de passe": "oungulukante",
+            "compteur":457000,
+            "historique" :[]
+        },
+    "Pika Pikachu": 
+        {
+            "date de naissance": "18/06/04",
+            "mot de passe": "attaquéclair",
+            "compteur":80,
+            "historique" :[]
+        },
+    "Océane Ho": 
+        {
+            "date de naissance": "18/01/58",
+            "mot de passe": "Couler",
+            "compteur":4568,
+            "historique" :[]
+        },
+    "Tessie Drole": 
+        {
+            "date de naissance": "13/05/79",
+            "mot de passe": "MDR",
+            "compteur":58800000000000000000,
+            "historique" :[]
+        },
+    "Sam Minèreve": 
+        {
+            "date de naissance": "04/12/86",
+            "mot de passe": "jesuiscolère",
+            "compteur":456123,
+            "historique" :[]
+        }
 }
