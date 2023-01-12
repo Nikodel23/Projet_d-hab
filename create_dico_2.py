@@ -45,7 +45,14 @@ dico_information = \
             "mot de passe": "HUM",
             "compteur":2110000,
             "historique" :[]
-        }
+        },
+     "Monsieur Patate":
+         {
+            "date de naissance": "09/04/78",
+            "mot de passe": "frite",
+            "compteur": 682,
+            "historique" :[]
+         }
 }
 
 
