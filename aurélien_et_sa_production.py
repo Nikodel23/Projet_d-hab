@@ -44,6 +44,20 @@ def text_historique (name):
     print (historique)
     return historique
 
+def action_account (name):
+    with open ("dico.json","r") as file:
+        dico = json.load(file)
+    nom = dico[name]
+    mdp = dico[name]["mot de passe"]
+    compteur = dico [name]["compteur"]
+    date_birth = dico [name]["date de naissance"]
+    texte_action_account = ("Votre compte comprends les informations suivantes :\n" \
+    +"\n Nom : " + str (nom) \
+    +"\n Date de naissance : " + str (date_birth) \
+    +"\n Mot de passe : " + str (mdp) \
+    +"\n Solde restante : " + str (compteur))
+    print (texte_action_account)
+
 #def write_in_historique(dico.json):
 #    if new_prelevement:
 #        with open (dico.json,"w") as file:
