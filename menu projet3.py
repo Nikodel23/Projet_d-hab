@@ -1,7 +1,7 @@
 from data_3 import (text_intro,text_for_action_for_clients, \
                     text_for_action_for_advisor,text_action_withdrawal,\
                     text_action_deposit, text_action_history, \
-                    text_action_account, texte_historique)
+                    texte_historique, action_account)
 
 #identifier la personne
 intro = print(text_intro)
@@ -11,7 +11,7 @@ if statut == "client":
         print (text_for_action_for_clients)
         action = int(input("Quel est votre action ?"))
         if action == 1:
-            print(text_action_account)
+            return action_account(name)
         if action == 2:
             print (text_action_withdrawal)
             amount = int(input("montant :"))

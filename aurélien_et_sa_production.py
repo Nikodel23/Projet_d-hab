@@ -63,8 +63,24 @@ def action_account (name):
 #        with open (dico.json,"w") as file:
 #            file.write ("historique")
 #    return
-    
-text_historique("Monsieur Patate")
+def write_in_json_file_dico_python (dico, json_file_name):
+    with open (json_file_name, 'w') as file:
+        json.dump (dico, file)
+        
+def action_deposit (name):
+    deposit = int(input("Dépot : "))
+    with open ("dico.json","w") as file:
+        dico = json.load(file)
+    if deposit >= dico[name]["compteur"]:
+        return ("error 404")
+    else:
+        solde_nouvelle = dico[name]["compteur"] 
+        solde_nouvelle += deposit
+        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvelle], dico.json)
+        print (dico[name]["compteur"])
+
+
+action_deposit("Jean Pranote")
 #identification_fct()
 '''if mot_de_passe_fct() == "a":
     statut = "client "
