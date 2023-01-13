@@ -68,30 +68,32 @@ def text_historique (name):
     return historique
 
 def write_in_json_file_dico_python (dico, json_file_name):
-    with open (json_file_name, 'w') as file:
-        json.dump (dico, file)
+    with open (json_file_name, 'w+') as file:
+        json.dump(dico, file, indent=4)
 
 
 def action_deposit (name):
     deposit = int(input("montant de votre dépot : "))
-    with open ("dico.json","w") as file:
-        dico = json.loads(file)
+    with open ("dico.json","r+") as file:
+        dico = json.load(file)
         solde_nouvelle = dico[name]["compteur"] 
         solde_nouvelle += deposit
-        print(dico[name]["compteur"][solde_nouvelle])
-        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvelle], dico.json)
+        solde_nouvellev2 = input(solde_nouvelle)
+        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvellev2], dico.json)
         print (dico[name]["compteur"])
         
 def action_withdrawal (name):
     amount = int(input("montant de votre retrait : "))
-    with open ("dico.json","w") as file:
-        dico = json.loads(file)
+    with open ("dico.json","r+") as file:
+        dico = json.load(file)
     if amount >= dico[name]["compteur"]:
         return ("error 404")
     else:
         solde_nouvelle = dico[name]["compteur"] 
         solde_nouvelle -= amount
-        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvelle], dico.json)
+        solde_nouvellev2 = input(solde_nouvelle)
+        print (type(solde_nouvellev2))
+        write_in_json_file_dico_python(dico[name]["compteur"][solde_nouvellev2], dico.json)
         print (dico[name]["compteur"])
 
 def action_list_advice_advisor ():
@@ -99,6 +101,10 @@ def action_list_advice_advisor ():
                         + str (list_name_advice))
     return text_list_advice
 
+"""def action_write_historique(action_name):
+    with open ("dico.json","w+") as file :
+        chain = ["O"]
+        json.dump(chain)"""
 ####################################################################################################################################
 
 
@@ -127,8 +133,7 @@ def menu_for_clients():
         action_withdrawal(name)
     if action == 3:
         print (text_action_deposit)
-        deposit = int(input("dépot : "))
-        return deposit
+        action_withdrawal(name)
     if action == 4:
         print(text_action_history)
 

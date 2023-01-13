@@ -34,3 +34,10 @@ text_action_history = ("Vous avez choisie de consulter votre historique \
 \n\
 \Voici votre historique : ")
 
+list_name_advice = {"Hellie Trop","Noah Brzezinski","Batarde Patrop","Iris Machina", \
+                    "Jean Pranote","Henri Gluant","Jesus Pauvre","Tom Desavoie", "Lamadre Dekanté" \
+                    "Pika Pikachu","Tessie Drole","Sam Minèreve"}
+list_name_advisor = {"Monsieur Patate","Océane Ho"}
+
+replay_commands = \
+    ["y", "yes", "Y", "go", "ok", "Yes", "on y va", "let's go", "oui", "o", "O", "Oui"]
